@@ -1,0 +1,69 @@
+.btn {
+  color: inherit;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid #FFF;
+  cursor: pointer;
+  padding: 0.551rem 1.5rem;
+  &:hover, &:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  &:active {
+    background-color: #FC3232;
+    border: 2px solid #FC3232;
+  }
+}
+
+.red_btn {
+  width: 100%;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: inherit;
+  background: #FC3232;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 0.875rem;
+  &:hover, &:focus {
+    background-color: #FF1F1F;
+  }
+  &:active {
+    background-color: #FC3232;
+  }
+}
+
+// Media
+@media  (min-width: 375px) {
+  .red_btn {
+    font-size: 1.0625rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media  (min-width: 768px) {
+  .red_btn {
+    width: auto;
+  }
+}
+
+@media  (min-width: 990px) {
+  .red_btn {
+    font-size: 1.125rem;
+    padding: 1rem 1.75rem;
+  }
+}
+
+@media  (min-width: 1440px) {
+  .red_btn {
+    font-size: 1.25rem;
+    padding: 1.125rem 2rem;
+  }
+}
+
+@media  (min-width: 1920px) {
+  .red_btn {
+    font-size: 1.625rem;
+    padding: 1.5rem 2.5rem;
+  }
+}
+

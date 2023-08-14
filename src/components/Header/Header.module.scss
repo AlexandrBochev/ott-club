@@ -1,0 +1,74 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  .header_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+    transition: ease-in 0.2s;
+    z-index: -1;
+  }
+  .header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: ease-in 0.2s;
+    z-index: 100;
+    .right_block {
+      display: flex;
+      align-items: center;
+      .facebook, .telegram, p {
+        display: none;
+        opacity: 0.8;
+        cursor: pointer;
+        margin: 0 1.5rem 0 0;
+      }
+      .telegram {
+        margin-right: 3rem;
+      }
+      .facebook:hover, .telegram:hover, p:hover {
+        opacity: 1;
+      }
+      .facebook:active, .telegram:active, p:active {
+        color: #FC3232;
+      }
+    }
+  }
+}
+
+.scrolled {
+  .header_bg {
+    opacity: 0.8;
+  }
+  .header_nav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    .logo {
+      img {
+        height: 2.5rem;
+      }
+    }
+  }
+}
+
+// Media 
+@media  (min-width: 768px) {
+  .header {
+    .header_nav {
+      .right_block {
+        .facebook, .telegram, p {
+          display: block;
+        }
+      }
+    }
+  }
+}
