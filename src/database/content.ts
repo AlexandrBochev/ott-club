@@ -35,29 +35,8 @@ export const introContent = {
   ],
 }
 
-export const advantagesContent = [
-  {
-    id: 1,
-    title: "Бесплатный тест",
-    description: "7 дней бесплатного тестового просмотра",
-    icon: gift
-  },
-  {
-    id: 2,
-    title: "5 устройств = 1 подписка",
-    description: "Подключайте 5 устройств в одной подписке",
-    icon: devices
-  },
-  {
-    id: 3,
-    title: "Архив трансляций",
-    description: "Смотрите 7 дней телеэфира в записи",
-    icon: tv
-  },
-  {
-    id: 4,
-    title: "Без привязки к месту",
-    description: "Смотрите любимые фильмы и передачи в любой точке мира",
-    icon: earth
-  },
-]
+export const rateContent = {
+  price: "1€",
+  title: "Покупая подписку более, чем на 6 месяцев",
+  button: "Подключить тариф",
+}
