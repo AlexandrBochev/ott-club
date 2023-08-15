@@ -2,11 +2,13 @@ import gift from '../assets/svg/gift.svg'
 import devices from '../assets/svg/dev.svg'
 import tv from '../assets/svg/tv.svg'
 import earth from '../assets/svg/earth.svg'
+import backgroundTop from '../assets/svg/background-top.svg'
 
 export const introContent = {
   title: "Более 270 телеканалов в прямом эфире",
   description: "Национальные, познавательные, детские, кино, спортивные, новостные и многие другие каналы",
   button: "Протестировать 7 дней бесплатно",
+  background: backgroundTop,
   advantages: [
     {
       id: 1,
@@ -33,6 +35,12 @@ export const introContent = {
       icon: earth
     },
   ],
+}
+
+export const introContent2 = {
+  title: "Смотрите на разных устройствах",
+  description: "Подключайте подписку FULL и смотрите любимые каналы на 5 устройствах, среди которых: телевизор, компьютер, планшет или смартфон",
+  button: "Протестировать 7 дней бесплатно",
 }
 
 export const rateContent = {

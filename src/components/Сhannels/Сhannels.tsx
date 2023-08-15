@@ -3,17 +3,55 @@ import lightning from '../../assets/svg/lightning.svg'
 import redArr from '../../assets/svg/red-arr.svg'
 import { logos } from '../../database/logos'
 import { channelsContent } from '../../database/content';
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Button from '../Button/Button';
 
 const Channels = () => {
   const [selectedCategory, setSelectedCategory] = useState("Популярные")
+  const [limit, setLimit] = useState(6)
+  const [initialLimit, setInitialLimit] = useState(6)
+  const [showAll, setShowAll] = useState(false);
+
+  let arrStyle = showAll ? styles.arr_up : styles.arr_down
 
   const handleCategoryChange = (category: any) => {
     setSelectedCategory(category)
   }
 
-  const filteredLogos = logos.filter(logo => logo.categories.includes(selectedCategory));
+  const filteredLogos = logos.filter(logo => logo.categories.includes(selectedCategory))
+
+  useEffect(() => {
+    const updateLimit = () => {
+      const screenWidth = window.innerWidth
+      let newLimit = 6
+      
+      if (screenWidth >= 768) {
+        newLimit = 8
+      }
+
+      if (screenWidth >= 990) {
+        newLimit = 10
+      }
+      setLimit(newLimit)
+    }
+
+    window.addEventListener('resize', updateLimit)
+    updateLimit()
+
+    return () => {
+      window.removeEventListener('resize', updateLimit)
+    }
+  }, [])
+
+  const handleToggleShowAll = () => {
+    if (showAll) {
+      setLimit(initialLimit);
+    } else {
+      setInitialLimit(limit);
+      setLimit(filteredLogos.length);
+    }
+    setShowAll(!showAll);
+  };
 
   return (
     <section className='container'>
@@ -37,7 +75,7 @@ const Channels = () => {
           )}
         </div>
         <div className={styles.channels_logos}>
-          {filteredLogos.map(logo =>
+          {filteredLogos.slice(0, limit).map(logo =>
             <div 
               style={{background: logo.background}}
               className={styles.channels_logo}>
@@ -45,10 +83,10 @@ const Channels = () => {
             </div>
           )} 
         </div>
-        <div className={styles.red_arr}>
-          <p>Показать все</p>
-          <img src={redArr} alt="Red Arr" />
-        </div>
+        <div className={styles.red_arr} onClick={handleToggleShowAll}>
+            <p>{showAll ? 'Скрыть' : 'Показать все'}</p>
+            <img src={redArr} alt="Red Arr" className={arrStyle} />
+          </div>
       </div> 
     </section>
   )
