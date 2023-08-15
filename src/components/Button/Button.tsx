@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styles from './Button.module.scss'
 
 interface IButton {

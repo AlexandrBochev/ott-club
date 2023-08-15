@@ -1,10 +1,11 @@
 .btn {
+  font-size: 1rem;
   color: inherit;
   background: none;
   border-radius: 5px;
   border: 2px solid #FFF;
   cursor: pointer;
-  padding: 0.551rem 1.5rem;
+  padding: 0.5rem 1rem;
   &:hover, &:focus {
     background-color: rgba(255, 255, 255, 0.4);
   }
@@ -15,11 +16,12 @@
 }
 
 .active_btn {
+  font-size: 1rem;
   color: inherit;
   border-radius: 5px;
   background-color: #FC3232;
   border: 2px solid #FC3232;
-  padding: 0.551rem 1.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .red_btn {
@@ -49,6 +51,14 @@
 }
 
 @media  (min-width: 768px) {
+  .btn {
+    padding: 0.75rem 1rem;
+  }
+
+  .active_btn {
+    padding: 0.75rem 1rem;
+  }
+
   .red_btn {
     width: auto;
   }
@@ -63,12 +73,21 @@
 
 @media  (min-width: 1440px) {
   .red_btn {
-    font-size: 1.25rem;
     padding: 1.125rem 2rem;
   }
 }
 
 @media  (min-width: 1920px) {
+  .btn {
+    font-size: 1.25rem;
+    padding: 1rem 1.75rem;
+  }
+
+  .active_btn {
+    font-size: 1.25rem;
+    padding: 1rem 1.75rem;
+  }
+
   .red_btn {
     font-size: 1.625rem;
     padding: 1.5rem 2.5rem;
