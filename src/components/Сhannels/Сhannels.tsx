@@ -88,6 +88,7 @@ const Channels = () => {
             <img src={redArr} alt="Red Arr" className={arrStyle} />
           </div>
       </div> 
+
     </section>
   )
 }

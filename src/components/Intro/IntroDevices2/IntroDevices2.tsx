@@ -1,17 +1,15 @@
 import styles from './IntroDevices2.module.scss'
-import tv from '../../../assets/png/intro-tv2.png'
-import macbook from '../../../assets/png/intro-macbook2.png'
-import iphone from '../../../assets/png/intro-iphone2.png'
-import ipad from '../../../assets/png/intro-ipad2.png'
+import devicesSm from '../../../assets/png/devices-sm.png'
+import devicesMd from '../../../assets/png/devices-md.png'
+import devicesLg from '../../../assets/png/devices-lg.png'
 
 const IntroDevices2 = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.intro_devices}>
-        <img src={tv} alt="tv" className={styles.tv} />
-        <img src={macbook} alt="macbook" className={styles.macbook} />
-        <img src={iphone} alt="iphone" className={styles.iphone} />
-        <img src={ipad} alt="ipad" className={styles.ipad} />
+        <img src={devicesSm} alt="devicesSm" className={styles.intro_devices_sm} />
+        <img src={devicesMd} alt="devicesMd" className={styles.intro_devices_md} />
+        <img src={devicesLg} alt="devicesLg" className={styles.intro_devices_lg} />
       </div>
     </div>
   )
