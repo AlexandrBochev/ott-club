@@ -2,6 +2,7 @@ import styles from './Channels.module.scss'
 import { logos } from '../../database/logos'
 import { channelsContent } from '../../database/content';
 import { useState } from 'react'
+import Button from '../Button/Button';
 
 const Channels = () => {
   const [selectedCategory, setSelectedCategory] = useState("Популярные")
@@ -17,21 +18,23 @@ const Channels = () => {
       <div className={styles.channels}>
         <div className={styles.channels_filter}>
           {channelsContent.categories.map(category =>
-            <button 
-              key={category}
-              // className={selectedCategory === category ? 'active' : ''}
-              className={styles.channels_category}
-              value={selectedCategory}
-              onClick={() => handleCategoryChange(category)}
-            >
-              {category}
-            </button >
+            <div onClick={() => handleCategoryChange(category)}>
+              <Button 
+                key={category}
+                name={category}
+                active={selectedCategory === category ? true : false}
+              />
+            </div>
           )}
         </div>
         <div className={styles.channels_logos}>
           {filteredLogos.map(logo =>
-            <img key={logo.link} src={logo.link} alt="logo" width={160} height={90} />
-          )}
+            <div 
+              style={{background: logo.background}}
+              className={styles.channels_logo}>
+              <img key={logo.link} src={logo.link} alt="logo" />
+            </div>
+          )} 
         </div>
       </div> 
     </section>
