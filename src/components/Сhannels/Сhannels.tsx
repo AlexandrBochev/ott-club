@@ -1,5 +1,6 @@
 import styles from './Channels.module.scss'
 import lightning from '../../assets/svg/lightning.svg'
+import redArr from '../../assets/svg/red-arr.svg'
 import { logos } from '../../database/logos'
 import { channelsContent } from '../../database/content';
 import { useState } from 'react'
@@ -43,6 +44,10 @@ const Channels = () => {
               <img key={logo.link} src={logo.link} alt="logo" />
             </div>
           )} 
+        </div>
+        <div className={styles.red_arr}>
+          <p>Показать все</p>
+          <img src={redArr} alt="Red Arr" />
         </div>
       </div> 
     </section>
