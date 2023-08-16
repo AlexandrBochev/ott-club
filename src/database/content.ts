@@ -73,7 +73,7 @@ export const faqContent = [
   },
   {
     id: 4,
-    question: 'Как смотреть на телевизоре Samsung?',
+    question: 'Как смотреть OTTCLUB на телевизоре Samsung?',
     answer: 'На телевизоре Samsung смотреть так: Кабель воткни, кнопку нажми, на диване расслабься.'
   },
   {
