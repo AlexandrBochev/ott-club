@@ -22,6 +22,21 @@ import logo21 from '../assets/png/channels/356.png'
 import logo22 from '../assets/png/channels/165.png'
 import logo23 from '../assets/png/channels/174.png'
 import logo24 from '../assets/png/channels/85.png'
+import logo25 from '../assets/png/channels/38.png'
+import logo26 from '../assets/png/channels/98.png'
+import logo27 from '../assets/png/channels/99.png'
+import logo28 from '../assets/png/channels/63.png'
+import logo29 from '../assets/png/channels/82.png'
+import logo30 from '../assets/png/channels/220.png'
+import logo31 from '../assets/png/channels/443.png'
+import logo32 from '../assets/png/channels/345.png'
+import logo33 from '../assets/png/channels/341.png'
+import logo34 from '../assets/png/channels/338.png'
+import logo35 from '../assets/png/channels/340.png'
+import logo36 from '../assets/png/channels/330.png'
+import logo37 from '../assets/png/channels/323.png'
+import logo38 from '../assets/png/channels/302.png'
+import logo39 from '../assets/png/channels/218.png'
 
 export const logos = [
   {
@@ -144,4 +159,81 @@ export const logos = [
     categories: ["Познавательные","Спорт", "Новостные"],
     background: "var(--gradient-g-violet, linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%))"
   },
+  {
+    link: logo25,
+    categories: ["Познавательные","Спорт", "Новостные"],
+    background: "var(--gradient-c-yellow, linear-gradient(180deg, #FFD426 0%, #B25000 100%))"
+  },
+  {
+    link: logo26,
+    categories: ["Популярные", "Национальные", "Познавательные", "Кино", "Спорт", "Новостные"],
+    background: "var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD 100%))"
+  },
+  {
+    link: logo27,
+    categories: ["Национальные", "Познавательные", "Кино", "Спорт", "Новостные"],
+    background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
+  },
+  {
+    link: logo28,
+    categories: ["Национальные", "Познавательные", "Новостные"],
+    background: "linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%)"
+  },
+  {
+    link: logo29,
+    categories: ["Познавательные", "Музыкальные", "Детские"],
+    background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
+  },
+  {
+    link: logo30,
+    categories: ["Познавательные", "Детские"],
+    background: "linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%)"
+  },
+  {
+    link: logo31,
+    categories: ["Познавательные", "Детские"],
+    background: "var(--gradient-a-red, linear-gradient(180deg, #FF6961 0%, #D70015 100%))"
+  },
+  {
+    link: logo32,
+    categories: ["Популярные", "Национальные", "Познавательные", "Кино", "Спорт", "Детские", "Музыкальные", "Новостные"],
+    background: "var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD 100%))"
+  },
+  {
+    link: logo33,
+    categories: ["Национальные", "Познавательные", "Кино", "Новостные"],
+    background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
+  },
+  {
+    link: logo34,
+    categories: ["Национальные", "Познавательные", "Кино", "Новостные", "Музыкальные"],
+    background: "var(--gradient-g-violet, linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%))"
+  },
+  {
+    link: logo35,
+    categories: ["Национальные", "Познавательные", "Детские"],
+    background: "var(--gradient-c-yellow, linear-gradient(180deg, #FFD426 0%, #B25000 100%))"
+  },
+  {
+    link: logo36,
+    categories: ["Национальные", "Музыкальные"],
+    background: "var(--gradient-c-yellow, linear-gradient(180deg, #FFD426 0%, #B25000 100%))"
+  },
+  {
+    link: logo37,
+    categories: ["Детские"],
+    background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
+  },
+  {
+    link: logo38,
+    categories: ["Познавательные", "Музыкальные"],
+    background: "linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%)"
+  },
+  {
+    link: logo39,
+    categories: ["Познавательные", "Музыкальные"],
+    background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
+  },
 ]
+
+// ["Популярные", "Национальные", "Познавательные", "Кино", "Спорт", "Детские", "Музыкальные", "Новостные"]

@@ -1,10 +1,10 @@
 import styles from './IntroDevices.module.scss'
-import tv from '../../../assets/png/intro-tv.png'
-import shadow from '../../../assets/png/intro-pumpkin_shadow.png'
-import pumpkin from '../../../assets/png/intro-pumpkin.png'
-import macbook from '../../../assets/png/intro-macbook.png'
-import iphone from '../../../assets/png/intro-iphone.png'
-import ipad from '../../../assets/png/intro-ipad.png'
+import tv from '../../../assets/webp/intro-tv.webp'
+import shadow from '../../../assets/webp/intro-pumpkin_shadow.webp'
+import pumpkin from '../../../assets/webp/intro-pumpkin.webp'
+import macbook from '../../../assets/webp/intro-macbook.webp'
+import iphone from '../../../assets/webp/intro-iphone.webp'
+import ipad from '../../../assets/webp/intro-ipad.webp'
 
 const IntroDevices = () => {
   return (

@@ -4,20 +4,6 @@ import IntroDevices from './IntroDevices/IntroDevices'
 import { introContent } from '../../database/content'
 import IntroAdvantage from './IntroAdvantage/IntroAdvantage'
 
-
-// interface IIntro {
-//   title: string;
-//   description: string;
-//   button: string;
-//   background?: string
-//   advantages?: {
-//     id: number;
-//     title: string;
-//     description: string;
-//     icon: string;
-//   }[];
-// }
-
 const Intro = () => {
   return (
     <section className={styles.wrapper}>

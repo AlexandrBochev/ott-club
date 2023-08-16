@@ -1,9 +1,9 @@
 import { allDevicesContent } from '../../database/content'
 import Button from '../Button/Button'
 import styles from './AllDevices.module.scss'
-import devicesSm from '../../assets/png/devices-sm.png'
-import devicesLg from '../../assets/png/devices-lg.png'
-import devicesMd from '../../assets/png/devices-md.png'
+import devicesSm from '../../assets/webp/devices-sm.webp'
+import devicesLg from '../../assets/webp/devices-lg.webp'
+import devicesMd from '../../assets/webp/devices-md.webp'
 
 const AllDevices = () => {
   return (
