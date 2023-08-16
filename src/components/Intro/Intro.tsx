@@ -1,27 +1,24 @@
 import Button from '../Button/Button'
 import styles from './Intro.module.scss'
-import IntroAdvantages from './IntroAdvantages/IntroAdvantage'
-// import IntroDevices from './IntroDevices/IntroDevices'
+import IntroDevices from './IntroDevices/IntroDevices'
+import { introContent } from '../../database/content'
+import IntroAdvantage from './IntroAdvantage/IntroAdvantage'
 
-interface IIntro {
-  title: string;
-  description: string;
-  button: string;
-  background?: string
-  advantages?: {
-    id: number;
-    title: string;
-    description: string;
-    icon: string;
-  }[];
-}
 
-interface IntroProps {
-  introContent: IIntro
-  introDevices: React.ComponentType
-}
+// interface IIntro {
+//   title: string;
+//   description: string;
+//   button: string;
+//   background?: string
+//   advantages?: {
+//     id: number;
+//     title: string;
+//     description: string;
+//     icon: string;
+//   }[];
+// }
 
-const Intro: React.FC<IntroProps> = ({ introContent, introDevices: IntroDevices }) => {
+const Intro = () => {
   return (
     <section className={styles.wrapper}>
       <div className='container'>
@@ -34,7 +31,7 @@ const Intro: React.FC<IntroProps> = ({ introContent, introDevices: IntroDevices 
               <Button name={introContent.button} red={true} />
             </div>
             <div className={styles.intro_advantages}>
-              { introContent.advantages && introContent.advantages.map((advantage) =><IntroAdvantages key={advantage.id} advantage={advantage} />) }
+              { introContent.advantages.map((advantage) =><IntroAdvantage key={advantage.id} advantage={advantage} />) }
             </div>
           </div>
         </div>

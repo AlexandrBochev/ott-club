@@ -8,10 +8,18 @@ const Partners = () => {
   return (
     <section className='container'>
       <div className={styles.partners}>
-        <img src={samsung} alt="samsung" className={styles.partners_1} />
-        <img src={ios} alt="ios" className={styles.partners_2} />
-        <img src={android} alt="android" className={styles.partners_3} />
-        <img src={lgSmart} alt="lgSmart" className={styles.partners_4} />
+        <a href="https://www.samsung.com/ua/tvs/smart-tv/" target='_blank'>
+          <img src={samsung} alt="samsung" className={styles.partners_1} />
+        </a>
+        <a href="https://www.apple.com/ua/apple-tv-plus/" target='_blank'>
+          <img src={ios} alt="ios" className={styles.partners_2} />
+        </a>
+        <a href="https://www.android.com/intl/ru_ru/tv/" target='_blank'>
+          <img src={android} alt="android" className={styles.partners_3} />
+        </a>
+        <a href="https://www.lg.com/ru/lg-magazine/what-is/kak-nastroit-smart-tv-na-televisore" target='_blank'>
+          <img src={lgSmart} alt="lgSmart" className={styles.partners_4} />
+        </a>
       </div>
     </section>
   )

@@ -31,7 +31,7 @@
 
 .channels_wrapper {
   width: 100%;
-  margin: 0 auto -4.125rem;
+  margin: 0 auto 2.25rem;
 }
 
 .channels_filter {
@@ -93,7 +93,7 @@
 // Media
 @media  (min-width: 375px) {
   .channels_wrapper {
-    margin: 0 auto -3.125rem;
+    margin: 0 auto 3.25rem;
   }
   .channels {
     .channels_title {
@@ -114,7 +114,7 @@
 
 @media  (min-width: 768px) {
   .channels_wrapper {
-    margin: 0 auto -4.375rem;
+    margin: 0 auto 4.25rem;
   }
   .channels {
     align-items: start;
@@ -147,7 +147,7 @@
 
 @media  (min-width: 990px) {
   .channels_wrapper {
-    margin: 0 auto -2.5rem;
+    margin: 0 auto 7.5rem;
   }
   .channels {
     .channels_title {
@@ -170,7 +170,7 @@
 
 @media  (min-width: 1440px) {
   .channels_wrapper {
-    margin: 0 auto -1.25rem;
+    margin: 0 auto 8.75rem;
   }
   .channels {
     .channels_title {
@@ -191,7 +191,7 @@
 
 @media  (min-width: 1920px) {
   .channels_wrapper {
-    margin: 0 auto 2.125rem;
+    margin: 0 auto 11.875rem;
   }
   .channels {
     .channels_title {

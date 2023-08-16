@@ -1,0 +1,178 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 2em;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.footer_about {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 2rem;
+}
+
+.help_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 2em;
+  .help_contacts {
+    h5 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 1.125em;
+    }
+  }
+  .help_chat {
+    margin: 1rem 0 0;
+    p {
+      margin: 0 0 0.625em;
+    }
+    .chat_social {
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+.footer_logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 1rem;
+  margin: 0 0 2em;
+  img {
+    height: 32px;
+  }
+}
+
+.footer_copyright {
+  margin: 0 0 0.875rem;
+  p {
+    text-align: center;
+    font-size: 0.75em;
+  }
+  span {
+    display: none;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    opacity: 0.8;
+  }
+}
+
+// Media
+@media  (min-width: 375px) {
+  .footer_about {
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+
+  .help_wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    .help_chat {
+      margin: 2rem 0 0;
+    }
+  }
+}
+
+@media  (min-width: 768px) {
+  .footer_wrapper {
+    flex-direction: row;
+  }
+
+  .footer_about {
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .footer_help {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+  }
+
+  .help_wrapper {
+    flex-direction: column;
+    align-items: start;
+    .help_chat {
+      margin: 1rem 0 0;
+    }
+  }
+
+  .footer_logos {
+    justify-content: start;
+    column-gap: 1rem;
+  }
+
+  .footer_copyright {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 0.5rem;
+    span {
+      display: block;
+    }
+  }
+}
+
+@media  (min-width: 990px) {
+  
+}
+
+@media  (min-width: 1440px) {
+  
+}
+
+@media  (min-width: 1920px) {
+  p {
+    font-size: 1.125rem;
+  }
+
+  .help_wrapper {
+    .help_contacts {
+      h5 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .footer_logos {
+    column-gap: 1.25rem;
+    img {
+      height: 40px;
+    }
+  }
+
+  .footer_copyright {
+    p {
+      font-size: 1em;
+    }
+    span {
+      width: 5px;
+      height: 5px;
+      border-radius: 2.5px;
+    }
+  }
+}

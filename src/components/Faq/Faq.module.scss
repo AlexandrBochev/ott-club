@@ -1,3 +1,7 @@
+.faq_title {
+  margin: 0 0 2rem;
+}
+
 .faq {
   width: 100%;
   display: flex;
@@ -5,7 +9,7 @@
   align-items: start;
   justify-content: space-between;
   border-bottom: none;
-  margin: 0 0 1.625rem;
+  margin: 0 0 2.375rem;
   .faq_block1 {
     width: 100%;
     flex: 1;
@@ -72,7 +76,9 @@
 
 // Media
 @media  (min-width: 375px) {
-
+  .faq_title {
+    margin: 0 0 2.375rem;
+  }
 }
 
 @media  (min-width: 768px) {
@@ -91,6 +97,9 @@
 }
 
 @media  (min-width: 990px) {
+  .faq_title {
+    margin: 0 0 3.125rem;
+  }
   .faq {
     gap: 2rem;
   }
@@ -122,6 +131,9 @@
 }
 
 @media  (min-width: 1920px) {
+  .faq_title {
+    margin: 0 0 4.25rem;
+  }
   .faq {
     gap: 13rem;
   }

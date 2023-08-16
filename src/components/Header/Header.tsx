@@ -25,12 +25,12 @@ const Header = () => {
             <img src={logo} alt="logo" />
           </a>
           <div className={styles.right_block}>
-            <div className={styles.facebook}>
+            <a href="https://www.facebook.com/official.ottclub" target='_blank' className={styles.facebook}>
               <Facebook />
-            </div>
-            <div className={styles.telegram}>
+            </a>
+            <a href="https://t.me/ottclubnews" target='_blank' className={styles.telegram}>
               <Telegram />
-            </div>
+            </a>
             <p>Регистрация</p>
             <Button name='Войти' />
           </div>

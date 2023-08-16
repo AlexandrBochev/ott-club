@@ -6,7 +6,7 @@ const Faq = () => {
 
   return (
     <section className='container'>
-      <h2>Популярные вопросы</h2>
+      <h2 className={styles.faq_title}>Популярные вопросы</h2>
       <div className={styles.faq}>
         <div className={styles.faq_block1}>
           <div className={styles.faq_block}>

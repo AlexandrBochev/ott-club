@@ -37,7 +37,7 @@ export const introContent = {
   ],
 }
 
-export const introContent2 = {
+export const allDevicesContent = {
   title: "Смотрите на разных устройствах",
   description: "Подключайте подписку FULL и смотрите любимые каналы на 5 устройствах, среди которых: телевизор, компьютер, планшет или смартфон",
   button: "Протестировать 7 дней бесплатно",
