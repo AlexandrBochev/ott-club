@@ -6,11 +6,16 @@ import masterCard from '../../assets/svg/master-card.svg'
 import freeKassa from '../../assets/svg/free-kassa.svg'
 import paysera from '../../assets/svg/paysera.svg'
 import sepa from '../../assets/svg/sepa.svg'
+import { motion as m } from "framer-motion"
 
 const Footer = () => {
   return (
     <footer className='container'>
-      <div className={styles.footer}>
+      <m.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.4, duration: 0.4, ease: "easeInOut" }}
+        className={styles.footer}>
         <div className={styles.footer_wrapper}>
           <div className={styles.footer_about}>
             <p>
@@ -71,7 +76,7 @@ const Footer = () => {
           <span/>
           <p>Company number 1221514</p>
         </div>
-      </div>
+      </m.div>
     </footer>
   )
 }

@@ -19,14 +19,14 @@ const IntroDevices = () => {
 
         <m.img
           initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 1.4, duration: 0.4, ease: "easeIn" }}
+          animate={{ scale: [null, 1, 0.94, 1] }}
+          transition={{ delay: 1.4, duration: 0.8, ease: "easeInOut" }}
           src={shadow} alt="shadow" className={styles.shadow} />
 
         <m.img
-          initial={{ opacity: 0, y: -400 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4, duration: 0.4, ease: "easeIn" }}
+          initial={{ opacity: 0, y: -500 }}
+          animate={{ opacity: 1, y: [null, 0, -6, 0] }}
+          transition={{ delay: 1.4, duration: 0.8, ease: "easeOut" }}
           src={pumpkin} alt="pumpkin" className={styles.pumpkin} />
 
         <m.img

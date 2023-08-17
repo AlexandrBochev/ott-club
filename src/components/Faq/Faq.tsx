@@ -1,14 +1,25 @@
 import styles from './Faq.module.scss'
 import { faqContent } from '../../database/content'
 import arr from '../../assets/svg/arr.svg'
+import { motion as m } from "framer-motion"
 
 const Faq = () => {
 
   return (
     <section className='container'>
-      <h2 className={styles.faq_title}>Популярные вопросы</h2>
+      <m.h2
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}
+        className={styles.faq_title}>
+          Популярные вопросы
+      </m.h2>
       <div className={styles.faq}>
-        <div className={styles.faq_block1}>
+        <m.div
+          initial={{ opacity: 0, y: 300 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className={styles.faq_block1}>
           <div className={styles.faq_block}>
             <div className={styles.question}>
               <h5>{faqContent[0].question}</h5>
@@ -30,8 +41,12 @@ const Faq = () => {
             </div>
             <p className={styles.answer}>{faqContent[2].answer}</p>
           </div>
-        </div>
-        <div className={styles.faq_block2}>
+        </m.div>
+        <m.div
+          initial={{ opacity: 0, y: 300 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.4, ease: "easeInOut" }}
+          className={styles.faq_block2}>
           <div className={styles.faq_block}>
             <div className={styles.question}>
               <h5>{faqContent[3].question}</h5>
@@ -53,7 +68,7 @@ const Faq = () => {
             </div>
             <p className={styles.answer}>{faqContent[5].answer}</p>
           </div>
-        </div>
+        </m.div>
       </div>
     </section>
   )

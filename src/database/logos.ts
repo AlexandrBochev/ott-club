@@ -40,196 +40,235 @@ import logo39 from '../assets/png/channels/218.png'
 
 export const logos = [
   {
+    id: 1,
     link: logo1,
     categories: ["Популярные", "Новостные"],
     background: "var(--gradient-a-red, linear-gradient(180deg, #FF6961 0%, #D70015 100%))"
   },
   {
+    id: 2,
     link: logo2,
     categories: ["Популярные", "Национальные", "Кино", "Спорт", "Новостные"],
     background: "var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD 100%))"
   },
   {
+    id: 3,
     link: logo3,
     categories: ["Популярные", "Познавательные"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 4,
     link: logo4,
     categories: ["Популярные", "Познавательные"],
     background: "var(--gradient-g-violet, linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%))"
   },
   {
+    id: 5,
     link: logo5,
     categories: ["Музыкальные"],
     background: "var(--gradient-c-yellow, linear-gradient(180deg, #FFD426 0%, #B25000 100%))"
   },
   {
+    id: 6,
     link: logo6,
     categories: ["Популярные", "Детские", "Национальные"],
     background: "var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD 100%))"
   },
   {
+    id: 7,
     link: logo7,
     categories: ["Популярные", "Кино"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 8,
     link: logo8,
     categories: ["Популярные", "Кино", "Национальные", "Познавательные", "Новостные"],
     background: "linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%)"
   },
   {
+    id: 9,
     link: logo9,
     categories: ["Популярные", "Познавательные"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 10,
     link: logo10,
     categories: ["Популярные", "Познавательные", "Кино"],
     background: "linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%)"
   },
   {
+    id: 11,
     link: logo11,
     categories: ["Познавательные", "Кино", "Детские"],
     background: "var(--gradient-a-red, linear-gradient(180deg, #FF6961 0%, #D70015 100%))"
   },
   {
+    id: 12,
     link: logo12,
     categories: ["Популярные", "Национальные", "Познавательные", "Кино", "Спорт", "Детские", "Новостные"],
     background: "var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD 100%))"
   },
   {
+    id: 13,
     link: logo13,
     categories: ["Популярные", "Национальные", "Познавательные", "Кино", "Спорт", "Детские", "Музыкальные", "Новостные"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 14,
     link: logo14,
     categories: ["Познавательные", "Кино", "Спорт", "Детские", "Музыкальные", "Новостные"],
     background: "var(--gradient-g-violet, linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%))"
   },
   {
+    id: 15,
     link: logo15,
     categories: ["Познавательные", "Спорт", "Новостные"],
     background: "var(--gradient-c-yellow, linear-gradient(180deg, #FFD426 0%, #B25000 100%))"
   },
   {
+    id: 16,
     link: logo16,
     categories: ["Познавательные", "Спорт"],
     background: "var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD 100%))"
   },
   {
+    id: 17,
     link: logo17,
     categories: ["Познавательные", "Спорт"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 18,
     link: logo18,
     categories: ["Спорт"],
     background: "linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%)"
   },
   {
+    id: 19,
     link: logo19,
     categories: ["Популярные", "Кино",],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 20,
     link: logo20,
     categories: ["Кино",],
     background: "linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%)"
   },
   {
+    id: 21,
     link: logo21,
     categories: ["Кино",],
     background: "var(--gradient-a-red, linear-gradient(180deg, #FF6961 0%, #D70015 100%))"
   },
   {
+    id: 22,
     link: logo22,
     categories: ["Музыкальные", "Новостные"],
     background: "var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD 100%))"
   },
   {
+    id: 23,
     link: logo23,
     categories: ["Популярные", "Национальные", "Познавательные", "Кино", "Спорт", "Детские", "Музыкальные", "Новостные"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 24,
     link: logo24,
     categories: ["Познавательные","Спорт", "Новостные"],
     background: "var(--gradient-g-violet, linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%))"
   },
   {
+    id: 25,
     link: logo25,
     categories: ["Познавательные","Спорт", "Новостные"],
     background: "var(--gradient-c-yellow, linear-gradient(180deg, #FFD426 0%, #B25000 100%))"
   },
   {
+    id: 26,
     link: logo26,
     categories: ["Популярные", "Национальные", "Познавательные", "Кино", "Спорт", "Новостные"],
     background: "var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD 100%))"
   },
   {
+    id: 27,
     link: logo27,
     categories: ["Национальные", "Познавательные", "Кино", "Спорт", "Новостные"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 28,
     link: logo28,
     categories: ["Национальные", "Познавательные", "Новостные"],
     background: "linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%)"
   },
   {
+    id: 29,
     link: logo29,
     categories: ["Познавательные", "Музыкальные", "Детские"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 30,
     link: logo30,
     categories: ["Познавательные", "Детские"],
     background: "linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%)"
   },
   {
+    id: 31,
     link: logo31,
     categories: ["Познавательные", "Детские"],
     background: "var(--gradient-a-red, linear-gradient(180deg, #FF6961 0%, #D70015 100%))"
   },
   {
+    id: 32,
     link: logo32,
     categories: ["Популярные", "Национальные", "Познавательные", "Кино", "Спорт", "Детские", "Музыкальные", "Новостные"],
     background: "var(--gradient-f-dark-blue, linear-gradient(180deg, #409CFF 0%, #0040DD 100%))"
   },
   {
+    id: 33,
     link: logo33,
     categories: ["Национальные", "Познавательные", "Кино", "Новостные"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 34,
     link: logo34,
     categories: ["Национальные", "Познавательные", "Кино", "Новостные", "Музыкальные"],
     background: "var(--gradient-g-violet, linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%))"
   },
   {
+    id: 35,
     link: logo35,
     categories: ["Национальные", "Познавательные", "Детские"],
     background: "var(--gradient-c-yellow, linear-gradient(180deg, #FFD426 0%, #B25000 100%))"
   },
   {
+    id: 36,
     link: logo36,
     categories: ["Национальные", "Музыкальные"],
     background: "var(--gradient-c-yellow, linear-gradient(180deg, #FFD426 0%, #B25000 100%))"
   },
   {
+    id: 37,
     link: logo37,
     categories: ["Детские"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"
   },
   {
+    id: 38,
     link: logo38,
     categories: ["Познавательные", "Музыкальные"],
     background: "linear-gradient(180deg, #7D7AFF 0%, #3634A3 100%)"
   },
   {
+    id: 39,
     link: logo39,
     categories: ["Познавательные", "Музыкальные"],
     background: "var(--gradient-d-green, linear-gradient(180deg, #30DB5B 0%, #248A3D 100%))"

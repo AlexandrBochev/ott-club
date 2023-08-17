@@ -5,6 +5,7 @@ import { logos } from '../../database/logos'
 import { channelsContent } from '../../database/content';
 import { useEffect, useState } from 'react'
 import Button from '../Button/Button';
+import { motion as m } from "framer-motion"
 
 const Channels = () => {
   const [selectedCategory, setSelectedCategory] = useState("Популярные")
@@ -15,7 +16,7 @@ const Channels = () => {
   let arrStyle = showAll ? styles.arr_up : styles.arr_down
 
   const handleCategoryChange = (category: any) => {
-    setSelectedCategory(category)
+    setSelectedCategory(category.name)
   }
 
   const filteredLogos = logos.filter(logo => logo.categories.includes(selectedCategory))
@@ -65,22 +66,29 @@ const Channels = () => {
       <div className={styles.channels_wrapper}>
         <div className={styles.channels_filter}>
           {channelsContent.categories.map(category =>
-            <div onClick={() => handleCategoryChange(category)}>
+            <m.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: category.id * 0.2, duration: 0.4, ease: "easeInOut" }}
+              onClick={() => handleCategoryChange(category)}>
               <Button 
-                key={category}
-                name={category}
-                active={selectedCategory === category ? true : false}
+                key={category.id}
+                name={category.name}
+                active={selectedCategory === category.name ? true : false}
               />
-            </div>
+            </m.div>
           )}
         </div>
         <div className={styles.channels_logos}>
           {filteredLogos.slice(0, limit).map(logo =>
-            <div 
+            <m.div
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: logo.id * 0.01, duration: 0.4, ease: "easeInOut" }}
               style={{background: logo.background}}
               className={styles.channels_logo}>
               <img key={logo.link} src={logo.link} alt="logo" />
-            </div>
+            </m.div>
           )} 
         </div>
         <div className={styles.red_arr} onClick={handleToggleShowAll}>
