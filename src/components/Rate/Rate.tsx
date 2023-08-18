@@ -54,7 +54,7 @@ const Rate = () => {
             className={styles.rate_email}
           />
           <m.button
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.8, duration: 0.4, ease: "easeInOut" }}
             className={styles.rate_btn}>
