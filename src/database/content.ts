@@ -2,7 +2,7 @@ import gift from '../assets/svg/gift.svg'
 import devices from '../assets/svg/dev.svg'
 import tv from '../assets/svg/tv.svg'
 import earth from '../assets/svg/earth.svg'
-import backgroundTop from '../assets/svg/background-top.svg'
+import backgroundTop from '../assets/webp/background-top.webp'
 
 export const introContent = {
   title: "Более 270 телеканалов в прямом эфире",

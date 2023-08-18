@@ -38,6 +38,19 @@ body {
   width: 3000px;
 }
 
+.pumps {
+  position: absolute;
+  right: 16px;
+  bottom: 20px;
+  display: flex;
+  height: 75px;
+  :first-child {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
 h1 {
   font-weight: 600;
   font-size: 1.5rem;
@@ -106,6 +119,15 @@ li {
     left: -350px;
     width: 1800px;
   }
+  .pumps {
+    right: 16px;
+    height: 75px;
+    :first-child {
+    display: block;
+    width: auto;
+    height: auto;
+    }
+  }
   .container {
     max-width: 720px;
   }
@@ -127,6 +149,10 @@ li {
   .background_bottom {
     width: 1965px;
   }
+  .pumps {
+    right: 30px;
+    height: 88px;
+  }
   .container {
     max-width: 926px;
   }
@@ -145,6 +171,10 @@ li {
   }
   .background_bottom {
     width: 2450px;
+  }
+  .pumps {
+    right: 140px;
+    height: 115px;
   }
   .container {
     max-width: 1128px;
@@ -165,6 +195,10 @@ li {
   .background_bottom {
     left: -480px;
     width: 3337px;
+  }
+  .pumps {
+    right: 200px;
+    height: 150px;
   }
   .container {
     max-width: 1494px;

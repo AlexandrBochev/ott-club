@@ -43,11 +43,11 @@ const Footer = () => {
               <div className={styles.help_chat}>
                 <p>Чат-поддержка</p>
                 <div className={styles.chat_social}>
-                  <a href="https://t.me/ottclubnews" target='_blank' className={styles.telegram}>
-                    <img src={telegram} alt="tilegram" width={40} height={40} />
-                  </a>
                   <a href="#">
                     <img src={whatsapp} alt="tilegram" width={40} height={40} />
+                  </a>
+                  <a href="https://t.me/ottclubnews" target='_blank' className={styles.telegram}>
+                    <img src={telegram} alt="tilegram" width={40} height={40} />
                   </a>
                 </div>
               </div>
